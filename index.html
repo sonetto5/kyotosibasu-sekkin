@@ -197,6 +197,18 @@ writing-mode: vertical-lr;
 		text-align: center;
 vertical-align: middle;
 }
+section4{
+	height: 500px;
+	width: 300px;
+	border: 1px solid #000;
+	dispaly: flex;
+	display: -webkit-flex;
+	}
+section5{
+	height: 480px;
+	width: 90px;
+	border: 1px solid #000;
+	}
 .kotei{
     position: sticky;
     top: 0;
@@ -206,6 +218,10 @@ background: #FFFFFF;
 @media only screen and (max-device-width : 480px) {
 /* スマートフォンだけ以下を適用 */
 }
+	.parent {
+        display: flex;
+		display: -webkit-flex;
+      }
 </style>
 <meta name="description" content="「京都市バス接近情報チェッカー」では、京都市交通局がバス接近情報を提供するサービスである「ポケロケ」を素早く簡単に見ることができます。">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -230,12 +246,9 @@ background: #FFFFFF;
   <h2 id="i1">主要通り別</h2>
   <h2 id="a1">南北の通り</h2>
     <h3>
-  <div class="main"> 
-    <div class="example1">
-    <div class="nisi">
-    西大路通り 準備中
-<div class="contents1">
-  北行き
+  <div class="parent">
+	  西大路通り<section4>
+  <section5>北行き
 <button class="btn2" onclick="location.href=''">金閣寺道</button><br>↑<br>
 <button class="btn2" onclick="location.href=''"></button><br>↑<br>
 <button class="btn2" onclick="location.href=''"></button><br>↑<br>
@@ -253,8 +266,8 @@ background: #FFFFFF;
 <button class="btn2" onclick="location.href=''">西大路七条</button><br>↑<br>
 <button class="btn2" onclick="location.href=''">西大路八条</button><br>↑<br>
 <button class="btn2" onclick="location.href=''">西大路九条</button><br>
-      </div>
-<div class="contents1">
+	  </section5>
+<section5>
   南行き
 <button class="btn2" onclick="location.href=''"></button><br>↓<br>
 <button class="btn2" onclick="location.href=''"></button><br>↓<br>
@@ -271,9 +284,8 @@ background: #FFFFFF;
 <button class="btn2" onclick="location.href=''"></button><br>↓<br>
 <button class="btn2" onclick="location.href=''"></button><br>↓<br>
 <button class="btn2" onclick="location.href=''"></button>
-      </div>
-    </div>
-	  </div>
+      </section5>
+    </section4>
 	    </div>
 	    <div class="clear"></div>
 <br>
