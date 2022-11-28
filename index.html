@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<title>京都市バス接近表示チェッカー</title>
+<title>京都市バス接近情報チェッカー</title>
 <meta charset="utf-8">
 <style>
 .btn1{
@@ -42,6 +42,26 @@ border-radius: 10px;
 cursor: pointer;
 background-color: #eee;
 }
+.btn6{
+width:40px;height:15em;
+border-radius: 10px;
+cursor: pointer;
+background-color: #eee;
+writing-mode: vertical-rl;
+font-size:16px;
+}
+.btn7{
+width:40px;height:6em;
+border: dashed 1px #906e84;
+border-radius: 10px;
+cursor: pointer;
+background-color: #eee;
+writing-mode: vertical-rl;
+input:first-of-type;
+text-align: center;
+vertical-align: middle;
+font-size:16px;
+}
 .example{
 writing-mode: vertical-rl;
 input:first-of-type;
@@ -62,20 +82,24 @@ vertical-align: middle;
 .main{width: 100%;
 float: left;
 }
+.main1{width: 905px;
+float: left;
+border: 1px solid #000000
+}
 .contents1{background: #FBC844;
 width: 120px;
 }
-.contents2{background: #ED724F;
+.contents2{background: #FFFFE5;
 width: 665px;
 }
 .contents3{background: #A1D8E6;
 width: 120px;
 }
-.contents4{background: #C694C1;
+.contents4{background: #C594C1;
   width: 120px;
   float: left;
   }
-  .contents5{background: #35C565;
+  .contents5{background: #5FBD97;
     width: 120px;
     float: left;
     }
@@ -102,12 +126,12 @@ width: 120px;
   float: left;
   border: 1px solid #000000;
 }
-.senbon{background: #C694C1;
+.senbon{background: #C594C1;
   width: 240px;
   float: left;
   border: 1px solid #000000;
   }
-  .horikawa{background: #35C565;
+  .horikawa{background: #5FBD97;
     width:240px;
     float: left;
     border: 1px solid #000000;
@@ -136,10 +160,55 @@ width: 120px;
 }
 .mgl2{margin-left: 16em;
 }
-.yokoscroll{overflox-x: scroll;
+.yokoscroll{overflox-y: scroll;
 white-space: nowrap;
 }
+.clear{clear: both;}
+  section{
+  max-width: 95%;
+  height: 520px;
+  padding: 5px;
+  border: 1px solid #000;
+  overflow-x: scroll;
+	}
+	section1{
+  max-width: 95%;
+  height: 500px;
+  padding: 5px;
+  border: 1px solid #000;
+  overflow-x: scroll;
+		 writing-mode: vertical-lr;
+		text-align: center;
+vertical-align: middle;
+	}
+section2{
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #000;
+writing-mode: vertical-lr;
+		text-align: center;
+vertical-align: middle;
+}
+section3{
+  height: 250px;
+  padding: 5px;
+  border: 1px solid #000;
+writing-mode: vertical-lr;
+		text-align: center;
+vertical-align: middle;
+}
+.kotei{
+    position: sticky;
+    top: 0;
+    left: 0;
+background: #FFFFFF;
+}
+@media only screen and (max-device-width : 480px) {
+/* スマートフォンだけ以下を適用 */
+}
 </style>
+<meta name="description" content="「京都市バス接近情報チェッカー」では、京都市交通局がバス接近情報を提供するサービスである「ポケロケ」を素早く簡単に見ることができます。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0FY8D1WMK"></script>
@@ -148,15 +217,15 @@ white-space: nowrap;
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-K0FY8D1WMK');
+  gtag('config', 'G-M2S8BF2VHE');
 </script>
 <body>
-<h1>京都市バス接近表示チェッカー</h1><br>
-  <a href="#i1">1.主要通り別</a><br>
+<h1>京都市バス接近情報チェッカー</h1>
+<h3><a href="#i1">1.主要通り別</a><br>
   <a href="#a1">1-1.南北の通り</a><br>
   <a href="#a2">1-2.東西の通り</a><br>
   <a href="#i2">2.主要系統別</a><br>
-  <a href="#b1">2-1.循環系統</a><br>
+  <a href="#b1">2-1.循環系統</a><br></h3>
   
   <h2 id="i1">主要通り別</h2>
   <h2 id="a1">南北の通り</h2>
@@ -164,7 +233,7 @@ white-space: nowrap;
   <div class="main"> 
     <div class="example1">
     <div class="nisi">
-    西大路通り<br>
+    西大路通り 準備中
 <div class="contents1">
   北行き
 <button class="btn2" onclick="location.href=''">金閣寺道</button><br>↑<br>
@@ -204,334 +273,19 @@ white-space: nowrap;
 <button class="btn2" onclick="location.href=''"></button>
       </div>
     </div>
-    <div class="senbon">
-千本・大宮通り<br>
-  <div class="contents4">
-  北行き
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button>
-      </div>
-      <div class="contents4">
-  南行き
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button>
-      </div>
-    </div>
-      <div class="horikawa">
-        堀川通り<br>
-      <div class="contents5">
-        北行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button>
-        </div>
-        <div class="contents5">
-南行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button>
-      </div>
-      </div>
-    </div>
-      </div>
- <div class="main"> 
-    <div class="example1">
-    <div class="kawaramati">
-    河原町通り<br>
-<div class="contents6">
-  北行き
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button>
-        </div>
-        <div class="contents6">
-南行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button>
-      </div>
-      </div>
-      <div class="higasi">
-    東大路通り<br>
-<div class="contents7">
-  北行き
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button>
-        </div>
-        <div class="contents7">
-南行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button>
-    </div>
-      </div>
-      <div class="sirakawa">
-    白川通り<br>
-<div class="contents8">
-  北行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button><br>↑<br>
-<button class="btn2" onclick="location.href=''"></button>
-        </div>
-        <div class="contents8">
-南行き<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button><br>↓<br>
-<button class="btn2" onclick="location.href=''"></button>
-    </div>
-      </div>
-   </div>
-      </div>
-</h3>
-  <h2 id="a2">東西の通り</h2>
-  <h3>丸太町通り東行き</h3>
-  <div class="wide1">
-  <div class="yokoscroll">
-    <p>
-<div class="example">
-  <button class=btn1 onclick="location.href=''"></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''"></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''"></button><br>
-    ↑<br>
-<button class=btn1 onclick="location.href=''"></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''"></button><br>
-↑<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=75d94bdf15f500a4af6331e3519d428e'">
-  <span class="example2">河原町丸太町<span class="number">202</span><span class="number">204</span><span class="number">65</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-<span class="example2">裁判所前<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">65</span><span class="number">93</span></span></button><br>
-  ↑<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=f496a098d7261d8748b03fdee72cbb03'">
-    <span class="example2">烏丸丸太町<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">65</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">府庁前<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span><br></button><br>
-  ↑<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=7780786e5d2963b26e3998127df75f2c'">
-    <span class="example2">堀川丸太町<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">丸太町智恵光院<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span><br></button><br>
-    ↑<br>
-<button class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=855397f6067d25606c6eeaab770de4d9'">
-  <span class="example2">千本丸太町<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span></button><br>
-↑<br>
-    <button class=btn1 onclick="location.href=''">
-      <span class="example2">丸太町七本松<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span><br></button><br>
-      ↑<br>
-      <button class=btn1 onclick="location.href=''">
-        <span class="example2">丸太町御前通<span class="number">202</span><span class="number">204</span><span class="number">10</span><span class="number">93</span></span><br></button><br>
-        ↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">西ノ京円町<span class="number">202</span><span class="number">204</span><span class="number">15</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">伯楽<span class="number">91</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">西ノ京馬代<span class="number">91</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">木辻南<span class="number">91</span><span class="number">93</span></span></button><br>
-    ↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">妙心寺<span class="number">91</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">花園駅前<span class="number">91</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">花園扇野<span class="number">91</span><span class="number">93</span></span></button><br>
-      ↑<br>
-<button class=btn1 onclick="location.href=''">
- <span class="example2">太秦映画村道<span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">常盤・嵯峨野高校<span class="number">91</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">常盤野小学校<span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br> 
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">太秦北路<span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">太秦開日<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">広沢御所ノ内<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-      ↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">嵯峨中学<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-<button class=btn1 onclick="location.href=''">
-  <span class="example2">嵯峨嵐山駅<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">嵯峨瀬戸川<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-  ↑<br>
-<button class=btn1 onclick="location.href=''">
-    <span class="example2">嵯峨小学校<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">野々宮<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">嵐山天龍寺前(嵐電嵐山駅)<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-↑<br>
-  <button class=btn1 onclick="location.href=''">
-    <span class="example2">嵐山<span class="number">11</span><span class="number">91</span><span class="number">特93</span><span class="number">93</span></span></button><br>
-</div>
-</div>
-</div>
 <br>
-<h3>丸太町通り西行き</h3>
-<div class="example">
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=03e287885fe4826abbcb08d73dd832af'">河原町丸太町</button><br>
-↓<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=9d11f40f09abc70e4e3d7317bc5678d0'">烏丸丸太町</button><br>
-↓<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=b57ebecee2044cea99417e2c24742eff'">堀川丸太町</button><br>
-↓<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=82b105b4c21aea48bdce51e6eedb9637'">千本丸太町</button><br>
-↓<br>
-<button 1 class=btn1 onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=a466ccdc101027864962fd2714c2d2ce'">西ノ京円町</button>
-</div>
 <h2 id="i2">主要系統別</h2>
   <h2 id="b1">循環系統</h2>
 <h3>201系統</h3>
+<h4>準備中</h4>
 <h3>202系統</h3>
+<h4>準備中</h4>
 <h3>203系統</h3>
+<h4>準備中</h4>
 <h3>204系統</h3>
+<h4>準備中</h4>
 <h3>205系統</h3>
-<div class="main">
+<section>
      <div class="example1">
 <div class="contents1">
 <button class="btn3" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=db01a5131cfc9d512aa6897f8a3543b0'">金閣寺道</button><br>
@@ -556,25 +310,25 @@ white-space: nowrap;
 <div class="contents2">
 <div class="example">
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=0efb1eb764a42a00ac213e5460c705f2'">府立大学</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=0efb1eb764a42a00ac213e5460c705f2'"><span class="example2">府立大学</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=27d2f9f3bae03ec30ef3a20964808cd5'">植物園前</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=27d2f9f3bae03ec30ef3a20964808cd5'"><span class="example2">植物園前</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=4f49b04b8f5a27b0a78e3cba7e2c3320'">烏丸北大路</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=4f49b04b8f5a27b0a78e3cba7e2c3320'"><span class="example2">烏丸北大路</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=560c90bba4486a3e5d06bef5a2632079'">北大路バスターミナル</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=560c90bba4486a3e5d06bef5a2632079'"><span class="example2">北大路バスターミナル</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=8452b252143ee79df21e8768b34acd46'">北大路新町</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=8452b252143ee79df21e8768b34acd46'"><span class="example2">北大路新町</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=d319164324a5caa3435242e02d6cb6c1'">北大路堀川</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=d319164324a5caa3435242e02d6cb6c1'"><span class="example2">北大路堀川</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=6744aa38bdab00a0eaa6317246e7f88b'">大徳寺</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=6744aa38bdab00a0eaa6317246e7f88b'"><span class="example2">大徳寺</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=b83ea3af66bf748ed52cd1fc0a0811c7'">建勲神社</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=b83ea3af66bf748ed52cd1fc0a0811c7'"><span class="example2">建勲神社</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=7a02735dc3f23fe21c0fa16c345cd7f8'">船岡山</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=7a02735dc3f23fe21c0fa16c345cd7f8'"><span class="example2">船岡山</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=9b8f90a8a4508c35959e2fe66f815071'">千本北大路</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=9b8f90a8a4508c35959e2fe66f815071'"><span class="example2">千本北大路</span></button><br>
 ↑↓<br>
   </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -582,19 +336,19 @@ white-space: nowrap;
 <p class="line2">
 <button class="btn3" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=c9468b9186e260457e1cdebdaf6ac08b'">烏丸七条</button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=433993a9f03a2d33e86a1680f3beec7e'">七条西洞院</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=433993a9f03a2d33e86a1680f3beec7e'"><span class="example2">七条西洞院</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=0c10a68ba548b419f0087e969d738b45'">七条堀川</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=0c10a68ba548b419f0087e969d738b45'"><span class="example2">七条堀川</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=f7d140524fb2a08d4b8c2a3f075e95f7'">七条大宮・京都水族館</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=f7d140524fb2a08d4b8c2a3f075e95f7'"><span class="example2">七条大宮・京都水族館</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ee6dbabebcfcb8868b22b325b3f87a10'">七条壬生川</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ee6dbabebcfcb8868b22b325b3f87a10'"><span class="example2">七条壬生川</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ceb02bda31b58d8b0c9c164288922060'">梅小路公園・JR梅小路京都西駅</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ceb02bda31b58d8b0c9c164288922060'"><span class="example2">梅小路公園・<span class="number">JR</span>梅小路京都西駅</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=f24464cf3a579b48f192ea12f1e717af'">七条千本</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=f24464cf3a579b48f192ea12f1e717af'"><span class="example2">七条千本</span></button><br>
 ↑↓<br>
-<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=571d83f843914cc383ba65d5952e0efd'">七条御前通</button><br>
+<button class="btn1" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=571d83f843914cc383ba65d5952e0efd'"><span class="example2">七条御前通</span></button><br>
 ↑↓<br> 
 </p>
 </div>
@@ -603,7 +357,7 @@ white-space: nowrap;
 ↑↓<br>
 <button class="btn3" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=e6d63c37f3a29cf1c2276e51585f8142'">京都駅</button><br>
 ↑↓<br>
-<button class="btn3" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ebb70327fc3a588fa6fa4a3a6f4fa2ba'">下京区総合庁舎</button><br>
+<button class="btn3" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=ebb70327fc3a588fa6fa4a3a6f4fa2ba'"><span class="example2">下京区総合庁舎</span></button><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 <div class="example1">
@@ -656,10 +410,14 @@ white-space: nowrap;
 <button class="btn4" onclick="location.href='http://blsetup.city.kyoto.jp/blsp/show.php?sid=5ab37d7bb31934a04729d5b5b06cd633'">塩小路高倉</button><br>
 </div>
 </div>
-</div>
-</div>
+</section>
+<div class="clear">
 <h3>206系統</h3>
+<p>準備中</p>
 <h3>207系統</h3>
+<p>準備中</p>
 <h3>208系統</h3>
+<p>準備中</p>
+</div>
 </body>
 </html>
